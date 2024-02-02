@@ -7,7 +7,6 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 export default function PortfolioChart() {
 
   const {assets} = useCrypto()
-  console.log(assets);
   const data = {
     labels: assets.map(a => a.name),
     datasets: [
